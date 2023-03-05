@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class metodocolecction {
 
@@ -24,6 +25,14 @@ public class metodocolecction {
 		
 		Collections.sort(cursos, Collections.reverseOrder()); // orden alfabetico decendente 
 		System.out.println(cursos);
+		
+		cursos.sort(Comparator.reverseOrder()); // orden alfabetico decendente 
+		System.out.println(cursos);
+		
+		cursos.sort(Comparator.naturalOrder()); // orden alfabetico ascendente 
+		System.out.println(cursos);
+		
+		
 
 	}
 
