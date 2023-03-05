@@ -43,6 +43,8 @@ public class metodocolecction {
 		System.out.println("metodos stream");
 		List<String> cursolist = cursos.stream().sorted().collect(Collectors.toList());
 		System.out.println(cursolist);
+		
+		
 
 	}
 
