@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class arraylista {
 
 	public static void main(String[] args) {
+		
 		String Variable1 = "Ejemplo1";
 		String Variable2 = "Ejemplo2";
 		String Variable3 = "Ejemplo3";
