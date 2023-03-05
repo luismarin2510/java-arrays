@@ -9,7 +9,7 @@ public class Lectura_arrays {
 		String Variable3 = "Ejemplo3";
 		String Variable4 = "Ejemplo4";
 
-		ArrayList<String> lista = new ArrayList();
+		ArrayList<String> lista = new ArrayList<>();
 
 		lista.add(Variable1);
 		lista.add(Variable2);
