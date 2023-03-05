@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class metodocolecction {
 
@@ -20,19 +23,26 @@ public class metodocolecction {
 
 		System.out.println(cursos);
 
-		Collections.sort(cursos); // orden alfabetico ascendente 
+		System.out.println(" ");
+		System.out.println("metodos collection");
+		Collections.sort(cursos); // orden alfabetico ascendente
 		System.out.println(cursos);
-		
-		Collections.sort(cursos, Collections.reverseOrder()); // orden alfabetico decendente 
+
+		Collections.sort(cursos, Collections.reverseOrder()); // orden alfabetico decendente
 		System.out.println(cursos);
-		
-		cursos.sort(Comparator.reverseOrder()); // orden alfabetico decendente 
+
+		System.out.println(" ");
+		System.out.println("metodos comparator");
+		cursos.sort(Comparator.reverseOrder()); // orden alfabetico decendente
 		System.out.println(cursos);
-		
-		cursos.sort(Comparator.naturalOrder()); // orden alfabetico ascendente 
+
+		cursos.sort(Comparator.naturalOrder()); // orden alfabetico ascendente
 		System.out.println(cursos);
-		
-		
+
+		System.out.println(" ");
+		System.out.println("metodos stream");
+		List<String> cursolist = cursos.stream().sorted().collect(Collectors.toList());
+		System.out.println(cursolist);
 
 	}
 
