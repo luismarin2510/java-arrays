@@ -1,6 +1,6 @@
 import java.util.ArrayList;
-import java.util.Collections;
-
+import java.util.Comparator;
+import java.util.List;
 
 public class test_lista_ordenando_objetos {
 
@@ -19,9 +19,9 @@ public class test_lista_ordenando_objetos {
 		curso.add(curso4);
 		System.out.println(curso);
 
-		Collections.sort(curso);
+		/// Collections.sort(curso,Comparator.comparing(curso::getnombre));
 
-		System.out.println(curso);
+		List<lista_de_objetos> cursolista = curso.stream().sorted(Comparator.comparing(curso::getTiempo));
 
 	}
 

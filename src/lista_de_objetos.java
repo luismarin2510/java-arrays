@@ -1,5 +1,5 @@
 
-public class lista_de_objetos implements Comparable<lista_de_objetos> {
+public class lista_de_objetos  {
 
 	private String nombre;
 	private int tiempo;
@@ -32,9 +32,6 @@ public class lista_de_objetos implements Comparable<lista_de_objetos> {
 		return this.nombre;
 	}
 
-	@Override
-	public int compareTo(lista_de_objetos o) {
-		return this.nombre.compareTo(o.getNombre());
-	}
+
 
 }
