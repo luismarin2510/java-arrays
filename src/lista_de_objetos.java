@@ -34,9 +34,7 @@ public class lista_de_objetos implements Comparable<lista_de_objetos> {
 
 	@Override
 	public int compareTo(lista_de_objetos o) {
-		return 0;
+		return this.nombre.compareTo(o.getNombre());
 	}
-	
-	
 
 }
