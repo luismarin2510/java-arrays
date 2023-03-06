@@ -26,4 +26,10 @@ public class lista_de_objetos {
 		this.tiempo = tiempo;
 	}
 
+	@Override
+
+	public String toString() {
+		return this.nombre;
+	}
+
 }
